@@ -1,11 +1,14 @@
-### This is a premium course created by Process4People. If you want to follow this course, please contact Process4People.
+### This is a premium course created by Process4People. If you want to follow this course, please contact Process4People. ###
+<img src="https://www.process4people.com/wp-content/uploads/2019/09/P4P-logo-png-1-e1568383922858.png" alt="Process4People logo">
 <p>You can contact Process4People via our <a href="https://www.process4people.com/contact/" target=_blank>website</a>, you could also contact us by phone, <a href="tel:+31853038660" target="_blank">+31 (0)85 303 86 60</a> or <a href="mailto:sven.noomen@process4people.nl" target="_blank">send us an e-mail</a>.</p>
 
-### Process4People
-# Integrate Power Apps with Dynamics 365 for Finance and Operations 
-## Lab overview
+- - - - - - - - - 
 
-### Abstract and Learning Objectives
+### Process4People ###
+# Integrate Power Apps with Dynamics 365 for Finance and Operations #
+## Lab overview ##
+
+### Abstract and Learning Objectives ###
 
 This is a beginner level lab for you to get your hands on and experience what different technologies from the Microsoft Power Platform can do for your Dynamics 365 for Finance and Operations environment. This lab includes step-by-step instructions to build you first app to communicate with data saved in Dynamics 365 for Finance and Operations. Technologies covered:
 
@@ -18,7 +21,7 @@ This is a beginner level lab for you to get your hands on and experience what di
 <b>Google Places API</b>: The Places API is a service that returns information about places using HTTP requests. Places are defined within this API as establishments, geographic locations or prominent points of interest.
 
 <b>Microsoft Dynamics</b>: A product line of enterprise resource planning (ERP) and customer relationship management (CRM), Dynamics 365 revolutionizes CRM and ERP by applying intelligence to all forms of data.
-### <p>Lab Structure and Learning Objectives</p>
+### <p>Lab Structure and Learning Objectives</p> ###
 The lab is divided into five modules, with one lab document provided for each module.
 
 <b>1.	01-Setting up your trial environments:</b>
