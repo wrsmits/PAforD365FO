@@ -1,0 +1,51 @@
+<p>Dear @{triggerBody()?['Author']?['DisplayName']},</p>
+<p>The following customer is approved and has been created in Dynamics 365 for Finance and Operations, you are now able to use this customer within your environment.</p>
+<p>Customer details are:</p>
+<table style="float: left;" border="1" width="500" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="150"><strong>Field</strong></td>
+<td width="350"><strong>Details</strong></td>
+</tr>
+<tr>
+<td><em>Company Name</em></td>
+<td>@{triggerBody()?['Title']}</td>
+</tr>
+<tr>
+<td><em>Contact Name</em></td>
+<td>@{triggerBody()?['Webpage']}</td>
+</tr>
+<tr>
+<td><em>Address</em></td>
+<td>@{triggerBody()?['StreetNo']}</td>
+</tr>
+<tr>
+<td><em>ZIP code</em></td>
+<td>@{triggerBody()?['ZIPcode']}</td>
+</tr>
+<tr>
+<td><em>City</em></td>
+<td>@{triggerBody()?['City']}</td>
+</tr>
+<tr>
+<td><em>Country</em></td>
+<td>@{triggerBody()?['Country']}</td>
+</tr>
+<tr>
+<td><em>Phone</em></td>
+<td>@{triggerBody()?['Phone1']}</td>
+</tr>
+<tr>
+<td><em>E-mail</em></td>
+<td>@{triggerBody()?['Email']}</td>
+</tr>
+<tr>
+<td><em>Bill-to E-mail</em></td>
+<td>@{triggerBody()?['BillEmail']}</td>
+</tr>
+<tr>
+<td><em>Website</em></td>
+<td>@{triggerBody()?['Webpage']}</td>
+</tr>
+</tbody>
+</table>

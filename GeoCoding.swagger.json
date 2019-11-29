@@ -1,0 +1,807 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Geocoding",
+    "description": "Geocode addresses",
+    "version": "1.0"
+  },
+  "host": "maps.googleapis.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/": {},
+    "/maps/api/geocode/{json}": {},
+    "/maps/api/geocode/json": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "address_components": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "long_name": {
+                              "type": "string",
+                              "description": "long_name"
+                            },
+                            "short_name": {
+                              "type": "string",
+                              "description": "short_name"
+                            },
+                            "types": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              },
+                              "description": "types"
+                            }
+                          }
+                        },
+                        "description": "address_components"
+                      },
+                      "formatted_address": {
+                        "type": "string",
+                        "description": "formatted_address"
+                      },
+                      "geometry": {
+                        "type": "object",
+                        "properties": {
+                          "location": {
+                            "type": "object",
+                            "properties": {
+                              "lat": {
+                                "type": "number",
+                                "format": "float",
+                                "description": "lat"
+                              },
+                              "lng": {
+                                "type": "number",
+                                "format": "float",
+                                "description": "lng"
+                              }
+                            },
+                            "description": "location"
+                          },
+                          "location_type": {
+                            "type": "string",
+                            "description": "location_type"
+                          },
+                          "viewport": {
+                            "type": "object",
+                            "properties": {
+                              "northeast": {
+                                "type": "object",
+                                "properties": {
+                                  "lat": {
+                                    "type": "number",
+                                    "format": "float",
+                                    "description": "lat"
+                                  },
+                                  "lng": {
+                                    "type": "number",
+                                    "format": "float",
+                                    "description": "lng"
+                                  }
+                                },
+                                "description": "northeast"
+                              },
+                              "southwest": {
+                                "type": "object",
+                                "properties": {
+                                  "lat": {
+                                    "type": "number",
+                                    "format": "float",
+                                    "description": "lat"
+                                  },
+                                  "lng": {
+                                    "type": "number",
+                                    "format": "float",
+                                    "description": "lng"
+                                  }
+                                },
+                                "description": "southwest"
+                              }
+                            },
+                            "description": "viewport"
+                          }
+                        },
+                        "description": "geometry"
+                      },
+                      "place_id": {
+                        "type": "string",
+                        "description": "place_id"
+                      },
+                      "plus_code": {
+                        "type": "object",
+                        "properties": {
+                          "compound_code": {
+                            "type": "string",
+                            "description": "compound_code"
+                          },
+                          "global_code": {
+                            "type": "string",
+                            "description": "global_code"
+                          }
+                        },
+                        "description": "plus_code"
+                      },
+                      "types": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "types"
+                      }
+                    }
+                  },
+                  "description": "results"
+                },
+                "status": {
+                  "type": "string",
+                  "description": "status"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Geocode",
+        "description": "Geocode",
+        "operationId": "Geocode",
+        "parameters": [
+          {
+            "name": "address",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "key",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "AIzaSyDf2L7r7EjnbEK3YV8hmddtpnjbr-FqtPw"
+          }
+        ]
+      }
+    },
+    "/maps/api/staticmap": {},
+    "/maps/api/directions/json": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "geocoded_waypoints": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "geocoder_status": {
+                        "type": "string",
+                        "description": "geocoder_status"
+                      },
+                      "place_id": {
+                        "type": "string",
+                        "description": "place_id"
+                      },
+                      "types": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "types"
+                      }
+                    }
+                  },
+                  "description": "geocoded_waypoints"
+                },
+                "routes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "bounds": {
+                        "type": "object",
+                        "properties": {
+                          "northeast": {
+                            "type": "object",
+                            "properties": {
+                              "lat": {
+                                "type": "number",
+                                "format": "float",
+                                "description": "lat"
+                              },
+                              "lng": {
+                                "type": "number",
+                                "format": "float",
+                                "description": "lng"
+                              }
+                            },
+                            "description": "northeast"
+                          },
+                          "southwest": {
+                            "type": "object",
+                            "properties": {
+                              "lat": {
+                                "type": "number",
+                                "format": "float",
+                                "description": "lat"
+                              },
+                              "lng": {
+                                "type": "number",
+                                "format": "float",
+                                "description": "lng"
+                              }
+                            },
+                            "description": "southwest"
+                          }
+                        },
+                        "description": "bounds"
+                      },
+                      "copyrights": {
+                        "type": "string",
+                        "description": "copyrights"
+                      },
+                      "legs": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "distance": {
+                              "type": "object",
+                              "properties": {
+                                "text": {
+                                  "type": "string",
+                                  "description": "text"
+                                },
+                                "value": {
+                                  "type": "integer",
+                                  "format": "int32",
+                                  "description": "value"
+                                }
+                              },
+                              "description": "distance"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "text": {
+                                  "type": "string",
+                                  "description": "text"
+                                },
+                                "value": {
+                                  "type": "integer",
+                                  "format": "int32",
+                                  "description": "value"
+                                }
+                              },
+                              "description": "duration"
+                            },
+                            "end_address": {
+                              "type": "string",
+                              "description": "end_address"
+                            },
+                            "end_location": {
+                              "type": "object",
+                              "properties": {
+                                "lat": {
+                                  "type": "number",
+                                  "format": "float",
+                                  "description": "lat"
+                                },
+                                "lng": {
+                                  "type": "number",
+                                  "format": "float",
+                                  "description": "lng"
+                                }
+                              },
+                              "description": "end_location"
+                            },
+                            "start_address": {
+                              "type": "string",
+                              "description": "start_address"
+                            },
+                            "start_location": {
+                              "type": "object",
+                              "properties": {
+                                "lat": {
+                                  "type": "number",
+                                  "format": "float",
+                                  "description": "lat"
+                                },
+                                "lng": {
+                                  "type": "number",
+                                  "format": "float",
+                                  "description": "lng"
+                                }
+                              },
+                              "description": "start_location"
+                            },
+                            "steps": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "distance": {
+                                    "type": "object",
+                                    "properties": {
+                                      "text": {
+                                        "type": "string",
+                                        "description": "text"
+                                      },
+                                      "value": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "description": "value"
+                                      }
+                                    },
+                                    "description": "distance"
+                                  },
+                                  "duration": {
+                                    "type": "object",
+                                    "properties": {
+                                      "text": {
+                                        "type": "string",
+                                        "description": "text"
+                                      },
+                                      "value": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "description": "value"
+                                      }
+                                    },
+                                    "description": "duration"
+                                  },
+                                  "end_location": {
+                                    "type": "object",
+                                    "properties": {
+                                      "lat": {
+                                        "type": "number",
+                                        "format": "float",
+                                        "description": "lat"
+                                      },
+                                      "lng": {
+                                        "type": "number",
+                                        "format": "float",
+                                        "description": "lng"
+                                      }
+                                    },
+                                    "description": "end_location"
+                                  },
+                                  "html_instructions": {
+                                    "type": "string",
+                                    "description": "html_instructions"
+                                  },
+                                  "polyline": {
+                                    "type": "object",
+                                    "properties": {
+                                      "points": {
+                                        "type": "string",
+                                        "description": "points"
+                                      }
+                                    },
+                                    "description": "polyline"
+                                  },
+                                  "start_location": {
+                                    "type": "object",
+                                    "properties": {
+                                      "lat": {
+                                        "type": "number",
+                                        "format": "float",
+                                        "description": "lat"
+                                      },
+                                      "lng": {
+                                        "type": "number",
+                                        "format": "float",
+                                        "description": "lng"
+                                      }
+                                    },
+                                    "description": "start_location"
+                                  },
+                                  "travel_mode": {
+                                    "type": "string",
+                                    "description": "travel_mode"
+                                  },
+                                  "maneuver": {
+                                    "type": "string",
+                                    "description": "maneuver"
+                                  }
+                                }
+                              },
+                              "description": "steps"
+                            },
+                            "traffic_speed_entry": {
+                              "type": "array",
+                              "items": {},
+                              "description": "traffic_speed_entry"
+                            },
+                            "via_waypoint": {
+                              "type": "array",
+                              "items": {},
+                              "description": "via_waypoint"
+                            }
+                          }
+                        },
+                        "description": "legs"
+                      },
+                      "overview_polyline": {
+                        "type": "object",
+                        "properties": {
+                          "points": {
+                            "type": "string",
+                            "description": "points"
+                          }
+                        },
+                        "description": "overview_polyline"
+                      },
+                      "summary": {
+                        "type": "string",
+                        "description": "summary"
+                      },
+                      "warnings": {
+                        "type": "array",
+                        "items": {},
+                        "description": "warnings"
+                      },
+                      "waypoint_order": {
+                        "type": "array",
+                        "items": {},
+                        "description": "waypoint_order"
+                      }
+                    }
+                  },
+                  "description": "routes"
+                },
+                "status": {
+                  "type": "string",
+                  "description": "status"
+                }
+              }
+            }
+          }
+        },
+        "summary": "WAYS",
+        "description": "WAYS",
+        "operationId": "WAYS",
+        "parameters": [
+          {
+            "name": "origin",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "destination",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "key",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "AIzaSyDf2L7r7EjnbEK3YV8hmddtpnjbr-FqtPw"
+          }
+        ]
+      }
+    },
+    "/maps/api/place/details/json": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "html_attributions": {
+                  "type": "array",
+                  "items": {},
+                  "description": "html_attributions"
+                },
+                "result": {
+                  "type": "object",
+                  "properties": {
+                    "address_components": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "long_name": {
+                            "type": "string",
+                            "description": "long_name"
+                          },
+                          "short_name": {
+                            "type": "string",
+                            "description": "short_name"
+                          },
+                          "types": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "description": "types"
+                          }
+                        }
+                      },
+                      "description": "address_components"
+                    },
+                    "adr_address": {
+                      "type": "string",
+                      "description": "adr_address"
+                    },
+                    "formatted_address": {
+                      "type": "string",
+                      "description": "formatted_address"
+                    },
+                    "formatted_phone_number": {
+                      "type": "string",
+                      "description": "formatted_phone_number"
+                    },
+                    "geometry": {
+                      "type": "object",
+                      "properties": {
+                        "location": {
+                          "type": "object",
+                          "properties": {
+                            "lat": {
+                              "type": "number",
+                              "format": "float",
+                              "description": "lat"
+                            },
+                            "lng": {
+                              "type": "number",
+                              "format": "float",
+                              "description": "lng"
+                            }
+                          },
+                          "description": "location"
+                        },
+                        "viewport": {
+                          "type": "object",
+                          "properties": {
+                            "northeast": {
+                              "type": "object",
+                              "properties": {
+                                "lat": {
+                                  "type": "number",
+                                  "format": "float",
+                                  "description": "lat"
+                                },
+                                "lng": {
+                                  "type": "number",
+                                  "format": "float",
+                                  "description": "lng"
+                                }
+                              },
+                              "description": "northeast"
+                            },
+                            "southwest": {
+                              "type": "object",
+                              "properties": {
+                                "lat": {
+                                  "type": "number",
+                                  "format": "float",
+                                  "description": "lat"
+                                },
+                                "lng": {
+                                  "type": "number",
+                                  "format": "float",
+                                  "description": "lng"
+                                }
+                              },
+                              "description": "southwest"
+                            }
+                          },
+                          "description": "viewport"
+                        }
+                      },
+                      "description": "geometry"
+                    },
+                    "icon": {
+                      "type": "string",
+                      "description": "icon"
+                    },
+                    "international_phone_number": {
+                      "type": "string",
+                      "description": "international_phone_number"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "name"
+                    },
+                    "opening_hours": {
+                      "type": "object",
+                      "properties": {
+                        "open_now": {
+                          "type": "boolean",
+                          "description": "open_now"
+                        },
+                        "periods": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "close": {
+                                "type": "object",
+                                "properties": {
+                                  "day": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "description": "day"
+                                  },
+                                  "time": {
+                                    "type": "string",
+                                    "description": "time"
+                                  }
+                                },
+                                "description": "close"
+                              },
+                              "open": {
+                                "type": "object",
+                                "properties": {
+                                  "day": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "description": "day"
+                                  },
+                                  "time": {
+                                    "type": "string",
+                                    "description": "time"
+                                  }
+                                },
+                                "description": "open"
+                              }
+                            }
+                          },
+                          "description": "periods"
+                        },
+                        "weekday_text": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          },
+                          "description": "weekday_text"
+                        }
+                      },
+                      "description": "opening_hours"
+                    },
+                    "photos": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "height": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "height"
+                          },
+                          "html_attributions": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "description": "html_attributions"
+                          },
+                          "photo_reference": {
+                            "type": "string",
+                            "description": "photo_reference"
+                          },
+                          "width": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "width"
+                          }
+                        }
+                      },
+                      "description": "photos"
+                    },
+                    "place_id": {
+                      "type": "string",
+                      "description": "place_id"
+                    },
+                    "plus_code": {
+                      "type": "object",
+                      "properties": {
+                        "compound_code": {
+                          "type": "string",
+                          "description": "compound_code"
+                        },
+                        "global_code": {
+                          "type": "string",
+                          "description": "global_code"
+                        }
+                      },
+                      "description": "plus_code"
+                    },
+                    "types": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "types"
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": "url"
+                    },
+                    "utc_offset": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "utc_offset"
+                    },
+                    "vicinity": {
+                      "type": "string",
+                      "description": "vicinity"
+                    },
+                    "website": {
+                      "type": "string",
+                      "description": "website"
+                    }
+                  },
+                  "description": "result"
+                },
+                "status": {
+                  "type": "string",
+                  "description": "status"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Places",
+        "description": "Places",
+        "operationId": "Places",
+        "parameters": [
+          {
+            "name": "placeid",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "x-ms-dynamic-values": {
+              "operationId": "Geocode",
+              "value-path": "place_id",
+              "value-collection": "results",
+              "value-title": "formatted_address"
+            }
+          },
+          {
+            "name": "fields",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "address_component,adr_address,formatted_address,geometry,name,place_id,url,vicinity,international_phone_number,website"
+          },
+          {
+            "name": "key",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "AIzaSyDf2L7r7EjnbEK3YV8hmddtpnjbr-FqtPw"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
