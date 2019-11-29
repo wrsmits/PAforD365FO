@@ -1,5 +1,5 @@
-## This is a premium course created by Process4People. If you want to follow this course, please contact Process4People.
-<p>You can contact Process4People via our <a href="https://www.process4people.com/contact/" target="_blank">website</a>, you could also contact us by phone, <a href="tel:+31853038660">+31 (0)85 303 86 60</a> or <a href="mailto:sven.noomen@process4people.nl">send us an e-mail</a>
+### This is a premium course created by Process4People. If you want to follow this course, please contact Process4People.
+<p>You can contact Process4People via our <a href="https://www.process4people.com/contact/" target="_blank">website</a>, you could also contact us by phone, <a href="tel:+31853038660" target="_blank">+31 (0)85 303 86 60</a> or <a href="mailto:sven.noomen@process4people.nl" target="_blank">send us an e-mail</a>.</p>
 
 ### Process4People
 # Integrate Power Apps with Dynamics 365 for Finance and Operations 
